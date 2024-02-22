@@ -90,3 +90,13 @@ use("learnMongoDB");
 /* db.brand.find({ $and: [{ name: "iphone" }, { price: { $lte: 1200 } }] }); */
 
 /* db.brand.find({ $or: [{ name: "Nokia" }, { price: { $eq: 1200 } }] }); */
+
+/* 
+  !Element Query Operator
+  $exists - Matches doc that have the specified filed.
+  $type
+*/
+
+/* db.products.find({ brand: { $exists: true } }); */
+/* db.products.find({ brand: { $exists: false } }); */
+/* db.products.find({ price: { $type: 2 } }); */
