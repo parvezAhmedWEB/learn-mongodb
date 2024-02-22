@@ -79,3 +79,14 @@ use("learnMongoDB");
     price: 1,
   }
 ); */
+
+/* 
+  !Logical Operator
+  $and
+  $or
+  $not
+  $nor
+*/
+/* db.brand.find({ $and: [{ name: "iphone" }, { price: { $lte: 1200 } }] }); */
+
+/* db.brand.find({ $or: [{ name: "Nokia" }, { price: { $eq: 1200 } }] }); */
