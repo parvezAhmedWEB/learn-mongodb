@@ -134,3 +134,28 @@ db.budget.find({
   $where:"this.budget>this.spent"
 })
 */
+
+/**
+ * ! Sort Limit Distinct and Row Count
+ * .sort
+ * .limit
+ * .count
+ * .distinct
+ */
+
+/**
+db.brand.find().sort({name:1})
+db.brand.find().sort({name:-1})
+db.brand.find().sort({price:-1})
+db.brand.find().sort({price:1})
+ */
+
+// db.brand.find().count('total')
+
+/**
+db.brand.find().limit(2)
+db.brand.find().sort({_id:-1}).limit(2)
+ */
+
+// db.brand.distinct('name')
+
