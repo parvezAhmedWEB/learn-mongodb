@@ -100,3 +100,37 @@ use("learnMongoDB");
 /* db.products.find({ brand: { $exists: true } }); */
 /* db.products.find({ brand: { $exists: false } }); */
 /* db.products.find({ price: { $type: 2 } }); */
+
+/* 
+  !Evaluation Query Operator
+  $expr
+  $jsonSchema
+  $mod
+  $regex
+  $text
+  $where
+*/
+/*
+db.budget.find({
+  $expr:{
+    $lt:['$budget', '$spent']
+  }
+})
+*/
+/*
+db.budget.find({
+  budget:{$mod:[2,0]}
+})
+*/
+/*
+db.products.find(
+  {
+    title:{$regex:'Ap'}
+  }
+)
+*/
+/*
+db.budget.find({
+  $where:"this.budget>this.spent"
+})
+*/
